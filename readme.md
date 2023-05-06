@@ -14,3 +14,4 @@ A powershell script compares the runtime of the programs.
 
 ## Languages
 - Elixir
+- Python
