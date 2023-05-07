@@ -6,7 +6,7 @@ class PrimeCounter:
 
     @staticmethod
     def check_prime(test_value):
-        if test_value > 2 and test_value % 2 == 0:
+        if test_value % 2 == 0:
             return False
         return all(test_value % i for i in range(3, int(math.sqrt(test_value)) + 1, 2))
 
