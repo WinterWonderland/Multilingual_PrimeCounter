@@ -21,7 +21,7 @@ $python_result = (Measure-Command { python python/prime_counter.py $max_value })
 Write-Output "Python: $python_result"
 
 $cs_result = (Measure-Command { cs/bin/PrimeCounter $max_value }).ToString()
-Write-Output "C#: $cs_result"
+Write-Output "C#:     $cs_result"
 
 Write-Output ""
 Write-Output ""

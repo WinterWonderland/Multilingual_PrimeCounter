@@ -26,4 +26,4 @@ if __name__ == '__main__':
     max_value = int(sys.argv[1])
     
     prime_count = PrimeCounter.get_prime_count(max_value)
-    print(f"Python: {prime_count} prime numbers up to {max_value}")
+    print(f"Python: {prime_count} prime numbers existing up to {max_value}")

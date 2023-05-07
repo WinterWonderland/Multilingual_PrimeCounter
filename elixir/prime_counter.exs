@@ -20,4 +20,4 @@ end
   |> Integer.parse()
 
 prime_count = PrimeCounter.get_prime_count(max_value)
-IO.puts("Elixir: #{prime_count} prime numbers up to #{max_value}")
+IO.puts("Elixir: #{prime_count} prime numbers existing up to #{max_value}")

@@ -1,7 +1,7 @@
 var max_value = int.Parse(args[0]);
 
 var prime_count = PrimeCounter.get_prime_count(max_value);
-Console.WriteLine($"C#: {prime_count} prime numbers up to {max_value}");
+Console.WriteLine($"C#:     {prime_count} prime numbers existing up to {max_value}");
 
 class PrimeCounter
 {
