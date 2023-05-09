@@ -1,9 +1,9 @@
-#include <stdio.h>
 #include <string>
 #include <cmath>
 #include <thread>
 #include <future>
 #include <vector>
+#include <iostream>
 
 using namespace std;
 
@@ -47,8 +47,10 @@ class PrimeCounter
 
 int main(int argc, char* argv[])
 {
-    auto max_value = atoi(argv[1]);
+    auto max_value = stoi(argv[1]);
 
     auto prime_count = PrimeCounter::get_prime_count(max_value);
-    printf((string("C++:    ") + to_string(prime_count) + " prime numbers existing up to " + to_string(max_value)).c_str());
+    cout << "C++:    " << prime_count <<   " prime numbers existing up to " << max_value << endl;
+
+    return 0;
 }

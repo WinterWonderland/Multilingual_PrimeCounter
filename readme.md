@@ -12,6 +12,7 @@ A console program takes the maximum number as an argument and prints how many pr
 - Elixir
 - Python
 - C#
+- C++
 
 ## Comparison
 A powershell script compares the runtime of the programs.
