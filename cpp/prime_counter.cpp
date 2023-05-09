@@ -11,7 +11,7 @@ class PrimeCounter
 {
     public: static bool check_prime(int test_value)
     {
-        for (auto divider = 2; divider <= sqrt(test_value) + 1; divider++)
+        for (auto divider = 2; divider <= ceil(sqrt(test_value)); divider++)
             if (test_value % divider == 0)
                 return false;
 
