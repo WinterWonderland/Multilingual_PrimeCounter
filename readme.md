@@ -9,6 +9,7 @@ The simple challenge is to count the existing prime numbers in a certain number 
 A console program takes the maximum number as an argument and prints how many prime numbers are existing up to this number.
 
 ## Languages
+- Rust
 - Elixir
 - Python
 - C#

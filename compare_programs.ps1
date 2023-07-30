@@ -11,6 +11,7 @@ Write-Output ""
 Write-Output "compare results:"
 Write-Output ""
 
+cargo run --manifest-path rust/Cargo.toml --release --quiet $max_value
 mix run --no-mix-exs elixir/prime_counter.exs $max_value
 python python/prime_counter.py $max_value
 dotnet run --project cs/PrimeCounter.csproj $max_value
@@ -21,6 +22,9 @@ Write-Output ""
 Write-Output ""
 Write-Output "measure runtime:"
 Write-Output ""
+
+$result = (Measure-Command { cargo run --manifest-path rust/Cargo.toml --release --quiet $max_value }).ToString()
+Write-Output "Rust:   $result"
 
 $result = (Measure-Command { mix run --no-mix-exs elixir/prime_counter.exs $max_value }).ToString()
 Write-Output "Elixir: $result"
